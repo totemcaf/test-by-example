@@ -1,0 +1,23 @@
+# nonk8s
+apiVersion: test/v1-alpha
+kind: TestStep
+metadata:
+  name: partner-starts-bnpl-flow
+spec:
+  post: ${credits}/bnpl
+  headers:
+    Api-Key: ${partnerApiKey}
+  body:
+    amount: "2200.40"
+    currency: "MXN"
+    clientId: $clientID
+    partnerId: $partnerID
+    transactionId: ${transactionID:random.regex:/^[0-9]{4}-[0-9]{6}$/}
+
+  response:
+    statusCode: 200
+    body:
+      # Both $(flowId) should be same value
+      id: $(flowID)
+      jwt: $(jwt)
+      uri: "https://paywith.stg.altscore.ai/#/${flowID}::$jwt"

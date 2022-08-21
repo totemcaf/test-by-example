@@ -1,5 +1,5 @@
 #-- IntellJ
-.idea
+.idea/
 *.iml
 
 #-- GO

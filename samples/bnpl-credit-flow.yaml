@@ -1,0 +1,16 @@
+# nonk8s
+apiVersion: test/v1-alpha
+kind: TestFlow
+metadata:
+  name: credit-request-flow
+spec:
+  environment:
+    partnerApiKey: PARTNER_API_KEY
+    partnerID: PARTNER_ID
+
+  values:
+    credits: "https://api.stg.altscore.ai/api/credits/v1"
+    creditsLocal: "http://localhost:8792/api/credits/v1"
+  steps:
+    - name: partner-creates-client
+    - name: partner-starts-bnpl-flow
