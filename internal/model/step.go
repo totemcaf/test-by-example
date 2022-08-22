@@ -30,6 +30,9 @@ func (s Step) Validate() error {
 type StepSpec struct {
 	Get      *string
 	Post     *string
+	Put      *string
+	Patch    *string
+	Delete   *string
 	Name     *string
 	Headers  Headers
 	Body     *Json
@@ -43,8 +46,17 @@ func (s StepSpec) Method() string {
 	if s.Post != nil {
 		return "POST"
 	}
+	if s.Put != nil {
+		return "PUT"
+	}
+	if s.Patch != nil {
+		return "PATCH"
+	}
+	if s.Delete != nil {
+		return "DELETE"
+	}
 
-	return "????" // TODO
+	return ""
 }
 
 func (s StepSpec) Url() string {
@@ -54,8 +66,17 @@ func (s StepSpec) Url() string {
 	if s.Post != nil {
 		return *s.Post
 	}
+	if s.Put != nil {
+		return *s.Put
+	}
+	if s.Patch != nil {
+		return *s.Patch
+	}
+	if s.Delete != nil {
+		return *s.Delete
+	}
 
-	return "????" // TODO
+	panic("unknown method")
 }
 
 func (s StepSpec) NameOrUrl() string {
@@ -68,5 +89,5 @@ func (s StepSpec) NameOrUrl() string {
 // IsReference returns true if this Step is not defined here, but references a
 // global defined step
 func (s StepSpec) IsReference() bool {
-	return s.Get == nil && s.Post == nil && s.Body == nil && s.Response == nil
+	return s.Method() == "" && s.Body == nil && s.Response == nil
 }
