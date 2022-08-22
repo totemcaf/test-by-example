@@ -1,8 +1,8 @@
 package evaluators
 
 import (
-	"bitbucket.org/altscore/test-by-example.git/internal/contexts"
-	"bitbucket.org/altscore/test-by-example.git/pkg/jsonx"
+	"github.com/totemcaf/test-by-example.git/internal/contexts"
+	"github.com/totemcaf/test-by-example.git/pkg/jsonx"
 )
 
 type jsonXEvaluator struct {

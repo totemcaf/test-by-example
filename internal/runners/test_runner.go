@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"bitbucket.org/altscore/test-by-example.git/internal/contexts"
-	"bitbucket.org/altscore/test-by-example.git/internal/evaluators"
-	"bitbucket.org/altscore/test-by-example.git/internal/model"
-	"bitbucket.org/altscore/test-by-example.git/pkg/jsonx"
 	"github.com/go-resty/resty/v2"
 	"github.com/spf13/viper"
+	"github.com/totemcaf/test-by-example.git/internal/contexts"
+	"github.com/totemcaf/test-by-example.git/internal/evaluators"
+	"github.com/totemcaf/test-by-example.git/internal/model"
+	"github.com/totemcaf/test-by-example.git/pkg/jsonx"
 	"go.uber.org/zap"
 )
 

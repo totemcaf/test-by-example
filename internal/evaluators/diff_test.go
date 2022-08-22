@@ -3,8 +3,8 @@ package evaluators
 import (
 	"testing"
 
-	"bitbucket.org/altscore/test-by-example.git/internal/contexts"
 	"github.com/stretchr/testify/assert"
+	"github.com/totemcaf/test-by-example.git/internal/contexts"
 	"go.uber.org/zap"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"bitbucket.org/altscore/test-by-example.git/internal/contexts"
+	"github.com/totemcaf/test-by-example.git/internal/contexts"
 )
 
 type Placeholder interface {

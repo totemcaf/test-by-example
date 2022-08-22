@@ -24,11 +24,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"bitbucket.org/altscore/test-by-example.git/internal/model"
-	"bitbucket.org/altscore/test-by-example.git/internal/parsers"
-	"bitbucket.org/altscore/test-by-example.git/internal/runners"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/totemcaf/test-by-example.git/internal/model"
+	"github.com/totemcaf/test-by-example.git/internal/parsers"
+	"github.com/totemcaf/test-by-example.git/internal/runners"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

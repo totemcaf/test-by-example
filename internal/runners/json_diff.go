@@ -1,8 +1,8 @@
 package runners
 
 import (
-	"bitbucket.org/altscore/test-by-example.git/internal/contexts"
-	"bitbucket.org/altscore/test-by-example.git/internal/model"
+	"github.com/totemcaf/test-by-example.git/internal/contexts"
+	"github.com/totemcaf/test-by-example.git/internal/model"
 )
 
 type Diff struct {

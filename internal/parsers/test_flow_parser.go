@@ -3,7 +3,7 @@ package parsers
 import (
 	"os"
 
-	"bitbucket.org/altscore/test-by-example.git/internal/model"
+	"github.com/totemcaf/test-by-example.git/internal/model"
 	"go.uber.org/zap"
 	"gopkg.in/yaml.v2"
 )

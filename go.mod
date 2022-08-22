@@ -1,4 +1,4 @@
-module bitbucket.org/altscore/test-by-example.git
+module github.com/totemcaf/test-by-example.git
 
 go 1.18
 

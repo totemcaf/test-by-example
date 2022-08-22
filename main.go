@@ -16,7 +16,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 package main
 
-import "bitbucket.org/altscore/test-by-example.git/cmd"
+import "github.com/totemcaf/test-by-example.git/cmd"
 
 func main() {
 	cmd.Execute()
