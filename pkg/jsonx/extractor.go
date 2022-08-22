@@ -14,7 +14,7 @@ func (e extractorType) Type() Type {
 	return Extractor
 }
 
-func (e extractorType) Eval(context Context) JsonX {
+func (e extractorType) Eval(_ Context) JsonX {
 	panic(fmt.Sprintf("evaluators cannot evaluate. Use '${%s}' instead", e.varName))
 }
 
@@ -24,7 +24,7 @@ func (e extractorType) Diff(context Context, actual JsonX) Differences {
 	return nil
 }
 
-func (e extractorType) Equals(actual JsonX) bool {
+func (e extractorType) Equals(_ JsonX) bool {
 	panic("implement extractor.Equals")
 }
 

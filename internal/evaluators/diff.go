@@ -72,19 +72,19 @@ func (c *comparator) compareValue(expected reflect.Value, actual reflect.Value) 
 }
 
 func (c *comparator) evaluatePtr(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) evaluateInterface(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) evaluateStruct(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) evaluateSlice(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) isBas64Map(expected reflect.Value, actual reflect.Value) bool {
@@ -92,15 +92,15 @@ func (c *comparator) isBas64Map(expected reflect.Value, actual reflect.Value) bo
 }
 
 func (c *comparator) evaluateBase64Map(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) evaluateMap(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) evaluateStr(expected reflect.Value, actual reflect.Value) {
-
+	panic("not implemented")
 }
 
 func (c *comparator) evaluateOthers(expected reflect.Value, actual reflect.Value) {
@@ -136,5 +136,4 @@ func (c *comparator) addDifference(areEqual bool, expected any, actual any) {
 			},
 		)
 	}
-
 }
