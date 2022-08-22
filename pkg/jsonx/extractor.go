@@ -29,5 +29,5 @@ func (e extractorType) Equals(_ JsonX) bool {
 }
 
 func (e extractorType) String() string {
-	panic("implement extractor.String")
+	return "$(" + e.varName + ")"
 }

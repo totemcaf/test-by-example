@@ -140,9 +140,12 @@ predict these value, the extractors allows to match any value received in the re
 
 Extractors also allow to verify the value type or format. The extracted value is stored in the context for later use. 
 
-| Expression                   | Sample                  | Use                                                                       |
-|------------------------------|-------------------------|---------------------------------------------------------------------------|
-| $(varName)                   | $(creditID)             | When comparing extracts value and sets value of variable in context       |
+| Expression      | Sample      | Use                                                                                                          |
+|-----------------|-------------|--------------------------------------------------------------------------------------------------------------|
+| $(varName)      | $(creditID) | When comparing extracts value and sets value of variable in context                                          |
+| $(varName:type) | $(term:int) | When comparing, checks if value is of type, extracts its value, and sets value of variable in context (TODO) |
+| $(:type)        | $(:uuid)    | When comparing, checks if value is of type, discards the value (TODO)                                        |
+| $(:any)         | $(:any)     | When comparing, just discards the value. If matches anything (TODO)                                          |
 
 # Generators
 
